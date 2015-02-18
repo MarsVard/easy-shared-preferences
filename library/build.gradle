@@ -1,19 +1,18 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.hiddenstage.easysharedpreferences.library"
         minSdkVersion 1
-        targetSdkVersion 20
+        targetSdkVersion 21
         versionCode 2
         versionName "1.1"
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled False
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
