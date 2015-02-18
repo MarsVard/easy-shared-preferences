@@ -22,6 +22,10 @@ public class EasySharedPreferences {
     public EasySharedPreferences(Context context, String key) {
         mSharedPreferences = context.getSharedPreferences(key, Context.MODE_PRIVATE);
     }
+    
+    public EasySharedPreferences(Context context, String key, int mode) {
+        mSharedPreferences = context.getSharedPreferences(key, mode);
+    }
 
     public int getInt(String key, int defaultValue) {
         return mSharedPreferences.getInt(key, defaultValue);
